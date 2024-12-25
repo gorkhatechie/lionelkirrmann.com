@@ -2,5 +2,5 @@
 ---
 
 $baseurl: "{{ site.baseurl }}";
-$asset_base_url: "{{ site.asset_base_url }}";
+$asset_url: "{{ site.asset_url }}";
 @import "custom";

@@ -1,12 +1,12 @@
-title: Beautiful Barpak
-email: btfulnepal@gmail.com
+title: Lionel Kirrmann
+email: #
 description: >- # this means to ignore newlines until "baseurl:"
-  Beautiful Barpak is a website that shows the beauty of Barpak village.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: https://barpak.org
-asset_base_url: /assets
 
-google_analytics: G-14HHMX4TR6
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://lionelkirrmann.com
+asset_url: /assets
+
+google_analytics:
 
 future: true # Show blog post of future date
 permalink: /blogs/:year/:month/:day/:title/
