@@ -4,7 +4,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://lionelkirrmann.com
-asset_url: /assets
+# asset_url: /assets
+asset_url: https://gorkhadev.sirv.com/lionel
 
 google_analytics:
 

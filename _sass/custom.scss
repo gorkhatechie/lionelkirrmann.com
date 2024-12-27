@@ -6,22 +6,22 @@ $text-color: #d6d5d5;
 // custom fonts
 @font-face {
   font-family: "ArialRegular";
-  src: url($asset_url + "/fonts/arial-regular.ttf");
+  src: url("/assets/fonts/arial-regular.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "ArialBold";
-  src: url($asset_url + "/fonts/arial-bold.ttf");
+  src: url("/assets/fonts/arial-bold.ttf");
   font-weight: bold;
 }
 @font-face {
   font-family: "TimesRegular";
-  src: url($asset_url + "/fonts/times-regular.ttf");
+  src: url("/assets/fonts/times-regular.ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "TimesBold";
-  src: url($asset_url + "/fonts/times-bold.ttf");
+  src: url("/assets/fonts/times-bold.ttf");
   font-weight: bold;
 }
 
@@ -50,16 +50,23 @@ body {
         padding-bottom: 0;
         color: #fff;
         text-transform: uppercase;
-        padding-left: 18px;
-        padding-right: 18px;
+        padding-left: 3rem;
+        padding-right: 3rem;
         font-size: 13px;
         font-weight: bold
+      }
+      .nav-link:last-child {
+        padding-right: 0;
       }
     }
   }
 }
 
 .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: $color-secondary;
   font-size: 16px;
   font-family: "ArialRegular";
@@ -77,6 +84,11 @@ body {
       margin-bottom: 0;
       text-align: center;
       position: relative;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
     }
     .footer-text::after {
       content: "|";
@@ -109,6 +121,10 @@ body {
       }
     }
   }
+}
+
+main {
+  margin-top: 100px;
 }
 
 @import "home";

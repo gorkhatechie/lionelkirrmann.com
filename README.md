@@ -1,6 +1,6 @@
-# Beautiful Barpak
+# Lionel Kirrmann
 
-The website repo for [Beautiful Barpak](https://barpak.org). This project is under the [Beautiful Nepal](https://beautifulnepal.org) project.
+The website repo for [Lionel Kirrmann](https://lionelkirrmann.com).
 
 # Run with Docker
 

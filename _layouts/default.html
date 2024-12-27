@@ -8,8 +8,7 @@
       <header>
         {% include navbar.html %}
       </header>
-
-      <main>
+      <main class="{% if page.permalink == '/' %}home{% else %}{{ page.permalink | replace: '/', '' }}{% endif %}-page">
         {{ content }}
       </main>
     </div>

@@ -1,6 +1,11 @@
 /*Custom JavaScript*/
 
 $(function () {
+
+  // lazy load images
+  const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+  observer.observe();
+
   ("use strict"); // Start of use strict
 
   // Closes responsive menu when a scroll trigger link is clicked

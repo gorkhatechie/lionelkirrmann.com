@@ -1,0 +1,146 @@
+---
+layout: default
+title: Computer Graphics
+permalink: /computer-graphics/
+videos:
+  - title: New York
+    id: Lm4G1aiEvtk
+---
+
+<!-- {% include embed-youtube.html id="Lm4G1aiEvtk" %} -->
+<div class="main-wrapper">
+  <div class="industrial-animations">
+    <div class="container">
+      <h3 class="title">Industrial Animations 2019-2021</h3>
+
+      <!-- row 1 -->
+      <div class="content-wrapper">
+        <div class="content-item">
+          <a
+            href="#animationVideoModal"
+            role="button"
+            class="youtube-video-btn"
+            data-src="https://www.youtube.com/embed/Lm4G1aiEvtk?autoplay=1"
+            data-bs-toggle="modal"
+            data-bs-target="#animationVideoModal"
+          >
+            <img src="{{ site.asset_url }}/img/industrial-animations/newyork.jpg"
+              class="card-img-top lozad"
+              alt="New York"
+            />
+          </a>
+        </div>
+        <div class="content-item">
+          <a
+            href="#animationVideoModal"
+            role="button"
+            class="youtube-video-btn"
+            data-src="https://www.youtube.com/embed/Lm4G1aiEvtk?autoplay=1"
+            data-bs-toggle="modal"
+            data-bs-target="#animationVideoModal"
+          >
+            <img src="{{ site.asset_url }}/img/industrial-animations/wrist-watch.jpg"
+              class="card-img-top lozad"
+              alt="New York"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- row 2 -->
+      <div class="content-wrapper">
+        <div class="content-item">
+          <a
+            href="#animationVideoModal"
+            role="button"
+            class="youtube-video-btn"
+            data-src="https://www.youtube.com/embed/Lm4G1aiEvtk?autoplay=1"
+            data-bs-toggle="modal"
+            data-bs-target="#animationVideoModal"
+          >
+            <img src="{{ site.asset_url }}/img/industrial-animations/tesla.jpg"
+              class="card-img-top lozad"
+              alt="Tesla"
+            />
+          </a>
+        </div>
+        <div class="content-item">
+          <!-- {% include embed-youtube.html id="Lm4G1aiEvtk" %} -->
+          <a
+            href="#animationVideoModal"
+            role="button"
+            class="youtube-video-btn"
+            data-src="https://www.youtube.com/embed/Lm4G1aiEvtk?autoplay=1"
+            data-bs-toggle="modal"
+            data-bs-target="#animationVideoModal"
+          >
+            <img src="{{ site.asset_url }}/img/industrial-animations/fruitloop.jpg"
+              class="card-img-top lozad"
+              alt="Fruit Loop"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- row 3 -->
+      <div class="content-wrapper">
+        <div class="content-item">
+          <a
+            href="#animationVideoModal"
+            role="button"
+            class="youtube-video-btn"
+            data-src="https://www.youtube.com/embed/Lm4G1aiEvtk?autoplay=1"
+            data-bs-toggle="modal"
+            data-bs-target="#animationVideoModal"
+          >
+            <img src="{{ site.asset_url }}/img/industrial-animations/dustbomb.jpg"
+              class="card-img-top lozad"
+              alt="Dust Bomb"
+            />
+          </a>
+        </div>
+        <div class="content-item">
+          <!-- {% include embed-youtube.html id="Lm4G1aiEvtk" %} -->
+          <a
+            href="#animationVideoModal"
+            role="button"
+            class="youtube-video-btn"
+            data-src="https://www.youtube.com/embed/Lm4G1aiEvtk?autoplay=1"
+            data-bs-toggle="modal"
+            data-bs-target="#animationVideoModal"
+          >
+            <img src="{{ site.asset_url }}/img/industrial-animations/tablet.jpg"
+              class="card-img-top lozad"
+              alt="Tablet"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="architectural-visualizations">
+    <div class="container">
+      <h3 class="title">Architectural Visualizations 2008-2019</h3>
+
+      {% for row_index in (1...26) %}
+        <!-- row {{ row_index }} -->
+        <div class="content-wrapper">
+          <div class="content-item">
+            <img data-src="{{ site.asset_url }}/img/architectural-visualizations/row{{ row_index }}_01.jpg" class="lozad img-fluid shadow" alt="Row {{ row_index }}" data-proofer-ignore />
+          </div>
+
+          <div class="content-item">
+            <img data-src="{{ site.asset_url }}/img/architectural-visualizations/row{{ row_index }}_02.jpg" class="lozad img-fluid shadow" alt="Row {{ row_index }}" data-proofer-ignore />
+          </div>
+
+          {% unless row_index == 3 or row_index == 11 or row_index == 15 %}
+            <div class="content-item">
+              <img data-src="{{ site.asset_url }}/img/architectural-visualizations/row{{ row_index }}_03.jpg" class="lozad img-fluid shadow" alt="Row {{ row_index }}" data-proofer-ignore />
+            </div>
+          {% endunless %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
