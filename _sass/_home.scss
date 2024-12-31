@@ -56,3 +56,33 @@
     margin: auto;
   }
 }
+
+// clients page
+.clients-page {
+  padding: 5rem 0 4rem;
+
+  .container {
+    max-width: 1200px;
+  }
+
+  .client-list {
+    list-style: none;
+    padding: 0;
+
+    .client-item {
+      font-family: "TimesRegular";
+      font-size: 15px;
+      color: #999;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .clients-page {
+    padding: 2rem 0 11rem 0;
+
+    .client-list {
+      margin-top: 2rem;
+    }
+  }
+}
