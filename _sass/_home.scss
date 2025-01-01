@@ -7,6 +7,53 @@
   height: 94.5vh;
 }
 
+.architecture-page {
+  padding: 5rem 0 12rem;
+
+  .title {
+    font-family: "TimesBold";
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: $color-secondary;
+  }
+
+  .breitestrasse-section {
+    .container {
+      .content-wrapper {
+        display: flex;
+
+        .left-content-wrapper {
+          padding-right: 10px;
+        }
+        .right-content-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 1.3rem;
+          justify-content: space-around;
+        }
+      }
+      .box-wrapper {
+        margin-top: 1.25em;
+      }
+
+      hr {
+        border: 2px solid #777;
+        margin-top: 3rem;
+        width: 99%;
+        margin-left: 0.5%;
+      }
+    }
+  }
+
+  .energetic-section {
+    padding-top: 5rem;
+
+    .content-wrapper {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
 // industrial animations page
 .computer-graphics-page {
   padding: 5rem 0 9rem;
