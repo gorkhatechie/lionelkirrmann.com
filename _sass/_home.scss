@@ -9,7 +9,7 @@
 
 // industrial animations page
 .computer-graphics-page {
-  padding: 6rem 0 9rem;
+  padding: 5rem 0 9rem;
 
   .title {
     font-family: "TimesBold";
@@ -30,6 +30,8 @@
 
 // lesar scanning page
 .lesar-scanning-page {
+  padding: 5rem 0 5rem;
+
   .header {
     text-align: center;
     border-bottom: 2px solid #aaa;
@@ -37,7 +39,7 @@
 
     .message {
       color: $color-secondary;
-      padding: 3rem 0 10px 0;
+      padding-bottom: 10px;
       margin-bottom: 0;
       font-size: 15px;
     }
@@ -51,10 +53,15 @@
     }
   }
   .img-wrapper {
-    padding: 1rem 0 4rem 0;
+    padding: 1rem 0 3rem 0;
     max-width: 900px;
     margin: auto;
   }
+}
+
+// sketchbook page
+.sketchbook-page {
+  padding: 5rem 12rem;
 }
 
 // clients page
@@ -101,7 +108,12 @@
   }
 }
 
+
 @media screen and (max-width: 520px) {
+  .sketchbook-page {
+    padding: 4rem 1rem 11rem;
+  }
+
   .clients-page {
     padding: 2rem 0 11rem 0;
 
@@ -109,6 +121,7 @@
       margin-top: 2rem;
     }
   }
+
   .contact-page {
     padding-top: 4rem;
     padding-bottom: 14rem;
