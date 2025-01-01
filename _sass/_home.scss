@@ -77,11 +77,43 @@
   }
 }
 
+// contact page
+.contact-page {
+  padding: 12rem 0 4rem 0;
+  font-family: "TimesRegular";
+  color: #999;
+  font-size: 17px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .text-content-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .middle-text {
+      padding-top: 3rem;
+    }
+  }
+}
+
 @media screen and (max-width: 520px) {
   .clients-page {
     padding: 2rem 0 11rem 0;
 
     .client-list {
+      margin-top: 2rem;
+    }
+  }
+  .contact-page {
+    padding-top: 4rem;
+    padding-bottom: 14rem;
+
+    .img-wrapper {
       margin-top: 2rem;
     }
   }
