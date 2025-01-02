@@ -14,7 +14,15 @@
     font-family: "TimesBold";
     font-size: 18px;
     margin-bottom: 5px;
-    color: $color-secondary;
+    color: #bbb;
+  }
+
+  hr {
+    border: 1px solid #777;
+    margin-top: 4rem;
+    width: 99%;
+    margin-left: 0.5%;
+    margin-bottom: 7rem;
   }
 
   .breitestrasse-section {
@@ -35,21 +43,57 @@
       .box-wrapper {
         margin-top: 1.25em;
       }
-
-      hr {
-        border: 2px solid #777;
-        margin-top: 3rem;
-        width: 99%;
-        margin-left: 0.5%;
-      }
     }
   }
 
   .energetic-section {
-    padding-top: 5rem;
-
     .content-wrapper {
       margin-bottom: 1rem;
+    }
+  }
+
+  .stadion-section {
+    .second-row {
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+    }
+    .third-row {
+      display: flex;
+      gap: 2.5rem;
+    }
+    .fourth-row {
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 2.5rem;
+    }
+  }
+
+  .rooftop-section {
+    .content-wrapper {
+      display: flex;
+      gap: 3rem;
+    }
+    .content-wrapper.first-row {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .measurements-section {
+    hr {
+      margin-top: 2rem;
+    }
+  }
+
+  .artisan-section {
+    .content-wrapper {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  .publications-section {
+    .content-wrapper  {
+      margin-top: 4rem 0;
     }
   }
 }
@@ -157,6 +201,38 @@
 
 
 @media screen and (max-width: 520px) {
+  .architecture-page {
+    padding: 5rem 0 12rem;
+
+    hr {
+      margin-top: 2.5rem;
+      margin-bottom: 5rem;
+    }
+
+    .breitestrasse-section {
+      .right-content-wrapper {
+        margin-top: 1.5rem;
+      }
+      .box-wrapper {
+        margin-top: 0;
+      }
+      .box-item {
+        margin-top: 1.5rem;
+      }
+    }
+
+    .energetic-section {
+      .content-wrapper {
+        margin-bottom: 0;
+      }
+      .col-md-4 {
+        margin-top: 1.5rem;
+      }
+      .first-row .col-md-4:first-child {
+        margin-top: 0;
+      }
+    }
+  }
   .sketchbook-page {
     padding: 4rem 1rem 11rem;
   }
@@ -177,4 +253,5 @@
       margin-top: 2rem;
     }
   }
+
 }
