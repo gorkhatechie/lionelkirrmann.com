@@ -101,6 +101,60 @@ body {
   }
 }
 
+// animation video dialog box
+#animationVideoModal {
+  top: 2%;
+
+  .modal-dialog {
+    max-width: 75%;
+
+    .modal-content {
+      background-color: transparent;
+      border: none;
+
+      .modal-header {
+        border-bottom: none;
+        padding: 0 1em;
+        justify-content: flex-end;
+        position: absolute;
+        right: -50px;
+        top: -40px;
+
+        .close {
+          color: #fff;
+          background: transparent;
+          border: none;
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}
+.animationVideo-btn {
+  position: relative;
+  z-index: 100;
+  transform: scale(1);
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    transform: scale(1.07);
+    transition: all 0.25s ease-in-out;
+  }
+
+  .youtube-logo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: auto;
+  }
+}
+
+main {
+  margin-top: 100px;
+}
+
 @media only screen and (max-width: 512px) {
   .navbar {
     .navbar-brand {
@@ -121,10 +175,26 @@ body {
       }
     }
   }
-}
 
-main {
-  margin-top: 100px;
+  #animationVideoModal {
+    .modal-dialog {
+      top: 25%;
+      max-width: 100%;
+
+      .modal-content {
+        .modal-header {
+          right: 5px;
+          top: -40px;
+          z-index: 10;
+
+          .close {
+            width: 5px;
+            height: 5px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @import "home";
