@@ -15,6 +15,11 @@ $font-primary: "Merriweather", serif;
   src: url("/assets/fonts/arial-bold.ttf");
   font-weight: bold;
 }
+@font-face {
+  font-family: "ArialRoundedBold";
+  src: url("/assets/fonts/arial-rounded-bold.ttf");
+  font-weight: bold;
+}
 
 body {
   font-family: "ArialRegular";
@@ -31,7 +36,7 @@ body {
   .navbar-brand {
     color: #fff;
     text-transform: uppercase;
-    font-family: "ArialBold";
+    font-family: "ArialRoundedBold";
     font-size: 28px;
     margin-bottom: -10px;
   }
