@@ -1,7 +1,8 @@
 /* Custom SCSS */
 $color-primary: #333335;
-$color-secondary: #838281;
+$color-secondary: #aaa;
 $text-color: #d6d5d5;
+$font-primary: "Merriweather", serif;
 
 // custom fonts
 @font-face {
@@ -14,16 +15,6 @@ $text-color: #d6d5d5;
   src: url("/assets/fonts/arial-bold.ttf");
   font-weight: bold;
 }
-@font-face {
-  font-family: "TimesRegular";
-  src: url("/assets/fonts/times-regular.ttf");
-  font-weight: normal;
-}
-@font-face {
-  font-family: "TimesBold";
-  src: url("/assets/fonts/times-bold.ttf");
-  font-weight: bold;
-}
 
 body {
   font-family: "ArialRegular";
@@ -31,7 +22,7 @@ body {
 
 .navbar {
   background-color: $color-primary;
-  height: 100px;
+  padding: 3rem 0 10px 0;
 
   .container {
     height: 100%;
@@ -51,12 +42,9 @@ body {
         color: #fff;
         text-transform: uppercase;
         padding-left: 3rem;
-        padding-right: 3rem;
+        padding-right: 0;
         font-size: 13px;
         font-weight: bold
-      }
-      .nav-link:last-child {
-        padding-right: 0;
       }
     }
   }
@@ -152,11 +140,20 @@ body {
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 95px;
 }
 
 @media only screen and (max-width: 512px) {
   .navbar {
+    .navbar-nav {
+      padding: 1rem 0 5px;
+
+      .nav-item {
+        .nav-link {
+          padding: 8px 0;
+        }
+      }
+    }
     .navbar-brand {
       font-size: 22px;
       margin-bottom: -10px;
@@ -166,6 +163,9 @@ main {
       font-size: 24px;
       padding: 6px 8px;
       border-color: #fff;
+    }
+    .navbar-toggler:focus {
+      box-shadow: 0 0 0 0.1rem;
     }
   }
   .footer {
